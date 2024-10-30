@@ -40,7 +40,7 @@ def get_response(user_input):
     st.session_state.history.append({"user": user_input, "bot": answer['챗봇']})
 
 # Streamlit 인터페이스
-st.title("식당 챗봇")
+st.title("헬창 메이커")
 
 # 이미지 표시
 st.image("fitness.jpg", caption="Welcome to fitness", use_column_width=True)

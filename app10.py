@@ -43,7 +43,7 @@ def get_response(user_input):
 st.title("식당 챗봇")
 
 # 이미지 표시
-st.image("https://github.com/naiw30/nomal-chat-bot/blob/main/fitness.jpg", caption="Welcome to fitness", use_column_width=True)
+st.image("fitness.jpg", caption="Welcome to fitness", use_column_width=True)
 
 st.write("헬창이 되고 싶으신가요?")
 

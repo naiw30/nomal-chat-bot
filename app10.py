@@ -8,23 +8,15 @@ encoder = SentenceTransformer('jhgan/ko-sroberta-multitask')
 
 # 식당 관련 질문과 답변 데이터
 questions = [
-    "영업시간이 어떻게 되나요?",
-    "가격이 어떻게 되나요?",
-    "주차가 가능한가요?",
-    "사람들이 좋아하는 메뉴는 무엇인가요?",
-    "목요일 12시에 예약 가능한가요?",
-    "메뉴가 무엇이 있나요?",
-    "위치가 어디인가요?"
+    "전체 조원이 몇명인가요?",
+    "조원들이 이름을 알려주세요?",
+    "포트폴리오의 주제가 뭔가요?",
 ]
 
 answers = [
-    "평일 영업시간은 10:00 - 21:00, 주말은 10:00 - 22:00입니다.",
-    "메뉴 가격은 비빔밥 9000원, 김치찌개 8000원, 된장찌개 8000원, 갈비탕 12000원입니다.",
-    "네, 주차 가능합니다.",
-    "사람들이 가장 좋아하는 메뉴는 비빔밥과 갈비탕입니다.",
-    "목요일 12시에 예약 가능합니다.",
-    "메뉴에는 비빔밥, 김치찌개, 된장찌개, 갈비탕 등이 있습니다.",
-    "맛있는 한식당은 강남 국기원 사거리 삼원빌딩 1층에 있습니다."
+    "4명입니다..",
+    "서동현, 경진우, 노승욱, 이원석 입니다.",
+    "운동을 하는 동작을 보고 바른 자세로 교정해주는 서비스 입니다.",
 ]
 
 # 질문 임베딩과 답변 데이터프레임 생성
@@ -51,9 +43,9 @@ def get_response(user_input):
 st.title("식당 챗봇")
 
 # 이미지 표시
-st.image("hand.png", caption="Welcome to the Restaurant Chatbot", use_column_width=True)
+st.image("https://github.com/naiw30/nomal-chat-bot/blob/main/fitness.jpg", caption="Welcome to fitness", use_column_width=True)
 
-st.write("한식당에 관한 질문을 입력해보세요. 예: 영업시간이 어떻게 되나요?")
+st.write("헬창이 되고 싶으신가요?")
 
 user_input = st.text_input("user", "")
 
